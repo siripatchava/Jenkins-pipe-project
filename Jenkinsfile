@@ -17,6 +17,11 @@ pipeline {
                 echo "packing code"
             }
         }
+        stage('publish') {
+            steps {
+                echo "publish code"
+            }
+        }
         stage('deploy') {
             steps {
                 echo "deploy code"
